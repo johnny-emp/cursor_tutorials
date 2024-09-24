@@ -23,8 +23,11 @@ contract ReflectTest is Test {
 
         uint256 supplyIncrease = 100e18;
         tokenState.increaseFragmentsPerToken(supplyIncrease);
-        assertEq(tokenState.fragmentsToTokens(totalFragments), 1_000_000e18 + supplyIncrease, "Total fragments should remain the same");
-
+        assertEq(
+            tokenState.fragmentsToTokens(totalFragments),
+            1_000_000e18 + supplyIncrease,
+            "Total fragments should remain the same"
+        );
     }
 
     function testIncreaseFragmentsPerToken() public {

@@ -10,7 +10,7 @@ library Reflect {
 
     function increaseFragmentsPerToken(TokenState storage self, uint256 amount) internal {
         require(amount > 0, "Amount must be greater than zero");
-        
+
         self.fragmentsPerToken = (self.fragmentsPerToken * self.totalTokens) / (self.totalTokens + amount);
     }
 
@@ -26,7 +26,7 @@ library Reflect {
     function userBalance(TokenState storage self, address user) internal view returns (uint256) {
         return self.userFragments[user] / self.fragmentsPerToken;
     }
-    
+
     function increaseUserBalance(TokenState storage self, address user, uint256 amount) internal {
         self.userFragments[user] += tokensToFragments(self, amount);
     }
