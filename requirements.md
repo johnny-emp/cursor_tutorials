@@ -1,38 +1,29 @@
-# To-Do Application Requirements
+# Reflective Token Contract Requirements
 
-## Technology Stack
-- Next.js for the application framework
-- Tailwind CSS for styling
+## Development Environment
+- We will be using Foundry's Forge for smart contract development and testing.
 
-## Authentication
-- No user authentication required
+## Testing
+- Comprehensive test coverage will be implemented using Forge's testing framework.
+- We aim for high test coverage to ensure the reliability and security of the contract.
 
-## Design Principles
-1. Clean and professional aesthetic
-2. Distinct yet not overly flashy design
-3. Consistent design system across all components
+## Library Development
+- A separate library will be developed for complex computations.
+- This library will handle calculations related to reflections, tax distributions, and other mathematical operations.
 
-## UI/UX Requirements
-1. Implement hover effects on all buttons for improved user interaction
-2. Maintain a cohesive visual language throughout the application
-3. Prioritize simplicity and ease of use in the interface design
+## Key Requirements
+1. Implement a settable token address functionality.
+2. Develop configurable buy and sell tax mechanisms.
+3. Create a reflection system for distributing a portion of taxes to token holders.
+4. Design a flexible, user-defined function for allocating the remaining tax portion.
+5. Ensure proper access control for sensitive functions (e.g., tax rate modifications).
+6. Implement events for important state changes and actions.
 
-## Styling Guidelines
-1. Utilize Tailwind CSS for efficient and consistent styling
-2. Create a custom color palette that aligns with the clean and professional aesthetic
-3. Implement responsive design to ensure compatibility across various devices and screen sizes
+## Security Considerations
+- Implement safeguards against excessive taxation.
+- Ensure the user-defined function is secure and doesn't introduce vulnerabilities.
+- Conduct thorough testing of all mathematical operations to prevent overflow/underflow issues.
 
-## Component Development
-1. Adhere to the established design system when creating new components
-2. Ensure reusability and modularity in component structure
-3. Implement proper accessibility features in all components
-
-## Performance Considerations
-1. Optimize for fast loading times and smooth interactions
-2. Implement efficient state management to handle to-do list operations
-
-## Data Persistence
-1. Utilize browser-level storage for data persistence
-2. Ensure data remains intact after page refresh
-
-By adhering to these requirements, we aim to create a polished, user-friendly, and efficient to-do application that meets the project's objectives while maintaining a professional and consistent design.
+## Documentation
+- Provide clear documentation for all functions, events, and state variables.
+- Include usage examples and deployment instructions in the README.
